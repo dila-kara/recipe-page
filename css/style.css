@@ -428,7 +428,12 @@ position: relative;
 }
 
 .image_section_controller {
-    width: var(--width-12col);
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px auto 50px;
@@ -1303,7 +1308,19 @@ position: relative;
  }
 
  .image_section {
-    display: none;
+    display: flex;
+    height: auto;
+    padding: 40px 0;
+ }
+
+ .image_section_controller {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+ .image_section_box {
+    grid-column: 1 / span 1;
  }
 
  .kitchen_grid {
@@ -1506,3 +1523,5 @@ position: relative;
 .footer a:hover {
     color: var(--color-light);
 }
+
+
